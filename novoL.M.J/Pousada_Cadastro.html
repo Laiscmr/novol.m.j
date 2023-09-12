@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cliente</title>
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="formulario" method="post" name="formulario">
+        <legend>Cadastro</legend>
+        <div id="grupo">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Insira o nome do cliente"><br>
+        </div>
+        <div id="grupo">
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="Insira seu Telefone"><br>
+            <div id="grupo">
+                <label for="cep">cep:</label><br>
+                <input type="cep" onblur="pesquisacep (this.value);" id="cep" name="cep" placeholder="Insira seu cep"><br>
+            </div>
+            <div id="grupo">
+                <label for="rua">rua:</label><br>
+                <input type="rua" id="rua" name="rua" placeholder="Insira o nome da sua rua"><br>
+            </div>  
+            <div id="grupo">
+                <label for="número">número:</label><br>
+                <input type="número" id="número" name="número" placeholder="Insira o número da sua rua"><br>
+            </div>
+            <div id="grupo">
+                <label for="complemento">complemento:</label><br>
+                <input type="complemento" id="complemento" name="complemento" placeholder="insira o complemento"><br>
+            </div>
+            <div id="grupo">
+                <label for="bairro">bairro:</label><br>
+                <input type="bairro" id="bairro" name="bairro" placeholder="Insira o nome do seu bairro"><br>
+            </div>  
+            <div id="grupo">
+                <label for="cidade">cidade:</label><br>
+                <input type="cidade" id="cidade" name="cidade" placeholder="Insira o nome da sua cidade"><br>
+            </div>  
+            <div id="grupo">
+                <label for="UF">UF:</label><br>
+                <input type="UF" id="UF" name="UF" placeholder="Insira o seu UF"><br>
+            </div> 
+        </div>
+        <div id="grupo">
+                <label for="idade">Idade:</label><br>
+                 <input type="number" id="idade" name="idade" placeholder="Insira sua idade"><br>
+        </div>    
+        <div id="grupo">
+            <label for="hospedes">Quantidade de Hóspedes:</label><br>
+             <input type="number" id="hospedes" name="hospedes" placeholder="Insira a Quantidade de Hóspedes"><br>
+        </div>  
+            <div id="botão">
+                <button type="button" class="botão" onclick="cadastrar()">Cadastrar</button>
+                
+            </div>
+            <div id="botão">
+                <button type="reset" class="botão" > limpar </button>
+                
+            </div>
+      </form> 
+</body>
+</html>
